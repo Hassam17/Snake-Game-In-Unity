@@ -117,7 +117,7 @@ public class Snake : MonoBehaviour
         if (other.gameObject.CompareTag("Food"))
         {
             Grow();
-            scoreManager.AddScore(5); // Add points when eating food
+            scoreManager.AddScore(1); // Add points when eating food
         }
         else if (other.gameObject.CompareTag("Obstacle") || other.gameObject.CompareTag("Wall"))
         {
